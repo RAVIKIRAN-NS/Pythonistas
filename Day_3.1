@@ -1,0 +1,30 @@
+#Love_calculator
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+lower_1 = name1.lower()
+lower_2 = name2.lower()
+t_count = lower_1.count("t") + lower_2.count("t")
+r_count = lower_1.count("r") + lower_2.count("r")
+u_count = lower_1.count("u") + lower_2.count("u")
+ee_count = lower_1.count("e")+ lower_2.count("e")
+
+true = str(t_count+r_count+u_count+ee_count)
+
+l_count = lower_1.count("l") + lower_2.count("l")
+o_count = lower_1.count("o") + lower_2.count("o")
+v_count = lower_1.count("v") + lower_2.count("v")
+e_count = lower_1.count("e") + lower_2.count("e")
+
+love = str(l_count+o_count+v_count+e_count)
+result = int(true + love)
+
+if result < 10 or result > 90:
+   print(f"Your score is {result}, you go together like coke and mentos.")
+elif result >= 40 and result <= 50:
+    print(f"Your score is {result}, you are alright together.")
+else:
+    print(f"Your score is {result}.")    
+
+
