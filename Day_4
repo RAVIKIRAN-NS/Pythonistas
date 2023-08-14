@@ -1,0 +1,19 @@
+#Heads or Tails.
+import random
+
+random_coin = random.randint(0,1)
+if random_coin == 0:
+    print("Heads")
+else:
+    print("Tails")    
+
+#Banker Roulette
+import random
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+num_items = len(names)     
+
+random_pay = random.randint(0,num_items - 1)  
+payer = names[random_pay]
+print(payer + " is going to buy the meal today!")
