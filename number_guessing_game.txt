@@ -1,0 +1,30 @@
+import random
+print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100")
+comp_guess = random.randint(1,100)
+#print(comp_guess)
+select_difficulty = input("Choose a difficulty. Type 'easy' or 'hard': ")
+if select_difficulty == "easy":
+  for i in range(1,11):
+    user_guess = int(input("Make a guess: "))
+    life = 10 - i
+    if user_guess > comp_guess:
+      print(f"Too high.\nGuess again.\nYou have {life} attempts remaining to guess the number.")
+    elif user_guess < comp_guess:
+      print(f"Too low.\nGuess again.\nYou have {life} attempts remaining to guess the number.")
+    elif user_guess == comp_guess:
+      print(f"You got it. The answer is {user_guess}")
+  if user_guess != comp_guess:   
+    print("You ran out of life.")
+elif select_difficulty == "hard":
+  for i in range(1,6):
+    user_guess = int(input("Make a guess: "))
+    life = 5 - i
+    if user_guess > comp_guess:
+      print(f"Too high.\nGuess again.\nYou have {life} attempts remaining to guess thenumber.")
+    elif user_guess < comp_guess:
+      print(f"Too low.\nGuess again.\nYou have {life} attempts remaining to guess the number.")
+    elif user_guess == comp_guess:
+      print(f"You got it. The answer is {user_guess}")
+  if user_guess != comp_guess:  
+    print("You ran out of life.")   
+
