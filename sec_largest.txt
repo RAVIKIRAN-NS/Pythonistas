@@ -1,0 +1,32 @@
+kiran = []
+ravi = int(input("elements: "))
+
+def dup_inp(kiran1):
+  kiran_copy = kiran[:]
+  return kiran_copy
+
+  
+for i in range(ravi):
+    kiran.append(int(input("enter numbers: ")))
+final_kiran = dup_inp(kiran)  
+
+max_score = 0
+for first_max in kiran:
+    if first_max== max_score :
+        kiran.remove(first_max)
+        
+    elif first_max > max_score:
+      max_score= first_max
+    
+kiran.remove(max_score)
+sec_max_score = 0
+for sec_max in kiran:
+    if sec_max > sec_max_score:
+        sec_max_score = sec_max
+sec_max_index = sec_max_score
+max_index = final_kiran.index(sec_max_index)
+
+print(final_kiran)
+print(f"{max_index} : {sec_max_score}")
+
+
