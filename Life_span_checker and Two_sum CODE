@@ -1,9 +1,11 @@
+#1. Two sum
 two_digit_number = input("Type a two digit number: ")
 a = int(two_digit_number[0])
 b = int(two_digit_number[1])
 print(a+ b)
 
 #2.How many days you live out of 90 years.
+
 age = input("What is your current age? ")
 max_age = 90 - int(age)  
 days = max_age * 365
