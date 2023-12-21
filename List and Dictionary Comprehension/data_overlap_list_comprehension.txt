@@ -1,0 +1,12 @@
+with open (r'file1.txt') as file1:
+    first_file = file1.readlines()
+with open (r'file2.txt') as file2:
+    second_file = file2.readlines()    
+
+
+result = [int(num) for num in first_file if num in second_file]
+
+
+print(result)
+
+
