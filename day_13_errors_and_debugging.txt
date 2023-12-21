@@ -1,0 +1,37 @@
+# 1.length of range should be assigned properly.
+# def my_function():
+#   for i in range(1,21):
+#     if i == 20:
+#       print("Got it")
+
+# my_function()
+
+# 2."and" operators "or" operators have different rule and check <,>,<=,>=
+# year = int(input("enter the year."))
+# if year >1980 or year< 1994:
+#   print("hi")
+# elif year > 1994:
+#   print("hey")
+
+# 3.Error based on comparision between str and int, and printing variable value in print(), so use f""
+# age = int(input("enter the age."))
+# if age >18:
+#   print(f"The age is {age}")
+
+# 4.Error while decalring variable , we should always use single assignment operator(=).
+# pages = 0
+# words_per_page = 0
+# pages = int(input("Enter the no pages: " ))
+# words_per_page = int(input("enter the words in page:"))
+# total_words = pages * words_per_page
+# print(f"the total words is {total_words}")
+
+# 5. "for" loops indentation. the b_list.append() was not in indentation before correcting it.
+# def mutate(a_list):
+#   b_list = []
+#   for item in a_list:
+#     new_item = item * 2
+#     b_list.append(new_item)
+#   print(b_list)
+
+# mutate([1,2,3,5,8,13])
