@@ -1,0 +1,10 @@
+def twoSum(self, nums, target):
+        for itr in range(len(nums)):
+            
+            for next_itr in  range(itr+1,len(nums)):
+                
+                if nums[itr]+nums[next_itr]==target:
+                    
+                    return [itr,next_itr]
+        
+        return []
