@@ -1,0 +1,15 @@
+# 1st solution
+
+class Solution(object):
+    def removeElement(self, nums, val):
+       for i in range(0,len(nums)+ 1):
+           if val in nums:
+               nums.remove(val)
+       return len(nums)
+
+#2. solution
+class Solution(object):
+    def removeElement(self, nums, val):
+       while val in nums:
+	 nums.remove(val)
+
