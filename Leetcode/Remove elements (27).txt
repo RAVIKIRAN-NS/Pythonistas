@@ -7,7 +7,7 @@ class Solution(object):
                nums.remove(val)
        return len(nums)
 
-#2. solution
+#2.solution
 class Solution(object):
     def removeElement(self, nums, val):
        while val in nums:
