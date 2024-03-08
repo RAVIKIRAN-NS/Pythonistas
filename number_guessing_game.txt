@@ -1,4 +1,4 @@
-import random.
+import random
 print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 and 100")
 comp_guess = random.randint(1,100)
 #print(comp_guess)
