@@ -1,5 +1,5 @@
 num = 9474
-count = 0 ** 0
+count = 0
 num_count = []
 add = 0
 
