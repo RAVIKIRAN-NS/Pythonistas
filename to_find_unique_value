@@ -15,3 +15,16 @@ print(unique)
 #         if i == arr[j]:
 #             arr.pop(j)
 # print(arr)
+
+
+#2.
+# arr_dict = {}
+# for i in arr:
+#     if i in arr_dict:
+#         arr_dict[i] += 1
+#     else:
+#         arr_dict[i] = 1
+#
+# for i in arr_dict:
+#     if arr_dict[i] == 1:
+#         print(i)
