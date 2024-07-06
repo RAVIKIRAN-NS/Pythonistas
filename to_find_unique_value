@@ -5,3 +5,13 @@ unique = 0
 for i in arr:
     unique ^= i
 print(unique)
+
+
+#1.
+# count = 0
+# for i in arr:
+#     count += 1
+#     for j in range(count,len(arr)):
+#         if i == arr[j]:
+#             arr.pop(j)
+# print(arr)
