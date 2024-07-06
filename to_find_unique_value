@@ -1,3 +1,7 @@
 arr = [1,2,3,4,3,2,1]
 
 #0. using bitwise operator
+unique = 0
+for i in arr:
+    unique ^= i
+print(unique)
