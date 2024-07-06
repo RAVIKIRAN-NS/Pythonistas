@@ -17,7 +17,7 @@ print(unique)
 # print(arr)
 
 
-#2.
+#2.use dictionary to store key value it cant contain duplicate. if duplicate value found add  + 1 to the key.
 # arr_dict = {}
 # for i in arr:
 #     if i in arr_dict:
